@@ -3,16 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { TranslationService } from './service/translation.service';
+import { HttpClientModule } from '@angular/common/http';
+import { TranslationPipe } from './pipes/translation.pipe';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+  declarations: [AppComponent, TranslationPipe],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  providers: [TranslationService],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
