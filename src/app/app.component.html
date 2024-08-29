@@ -1,26 +1,26 @@
 <div>
   <div style="display: flex; flex-direction: column; gap: 1rem; width: 15rem">
     <div style="display: flex; justify-content: space-between">
-      <div>{{ "NAME" | translation : dictionary }}:</div>
+      <div>{{ "NAME" | translate }}:</div>
       <div>Tung</div>
     </div>
     <div style="display: flex; justify-content: space-between">
-      <div>{{ "SURNAME" | translation : dictionary }}:</div>
+      <div>{{ "SURNAME" | translate }}:</div>
       <div>Pham</div>
     </div>
     <div style="display: flex; justify-content: space-between">
-      <div>{{ "PLAY_OF_BIRTH" | translation : dictionary }}:</div>
+      <div>{{ "PLAY_OF_BIRTH" | translate }}:</div>
       <div>Praha</div>
     </div>
     <div style="display: flex; justify-content: space-between">
-      <div>{{ "RESIDENCE" | translation : dictionary }}:</div>
+      <div>{{ "RESIDENCE" | translate }}:</div>
       <div>Praha 10</div>
     </div>
   </div>
 
   <div style="margin-top: 3rem">
-    <button (click)="getDictionary('en')">English</button>
-    <button (click)="getDictionary('cz')">Cesky</button>
+    <button (click)="changeLanguage('en')">English</button>
+    <button (click)="changeLanguage('cz')">Cesky</button>
   </div>
 </div>
 
